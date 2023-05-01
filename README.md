@@ -22,15 +22,19 @@ Install-Module -Name KrakenExchange
 
 ## Usage
 
+### `Connect-KExchange`
+
 Function `Connect-KExchange` provide API data for private access (can be skipped for public access):
 
 ```powershell
 Connect-KExchange
 ```
 
+You will be asked to provide APi Key and API Secret
+
 ---
 
-### ApiKey and ApiSecret
+#### ApiKey and ApiSecret
 
 To get a Kraken API Key and API Secret, you will need to follow these steps:
 
@@ -52,7 +56,7 @@ To get a Kraken API Key and API Secret, you will need to follow these steps:
 
 ---
 
-Function `Get-KEAssetInfo`:
+### `Get-KEAssetInfo`
 
 ```powershell
 PS C:\> Get-KEAssetInfo -Asset eth | convertto-json
@@ -66,7 +70,9 @@ PS C:\> Get-KEAssetInfo -Asset eth | convertto-json
 }
 ```
 
-Function `Get-KETicker` is using Websockets API and default `-Pair` is `BTC/USD`:
+### `Get-KETicker`
+
+Gets ticker using Websockets API and default `-Pair` is `BTC/USD`:
 
 ```powershell
 PS C:\> Get-KETicker
@@ -78,7 +84,7 @@ o : {28179.00000, 28496.40000}
 
 [message ticker](https://docs.kraken.com/websockets/#message-ticker)
 
-Function `Get-KETickerInformation`:
+### `Get-KETickerInformation`
 
 ```powershell
 PS C:\> Get-KETickerInformation -Pair "BTCUSD" | ConvertTo-Json -Depth 3
@@ -95,7 +101,7 @@ PS C:\> Get-KETickerInformation -Pair "BTCUSD" | ConvertTo-Json -Depth 3
 }
 ```
 
-Function `Get-KETradableAssetPair`:
+### `Get-KETradableAssetPair`
 
 ```powershell
 PS C:\> Get-KETradableAssetPair -Pair "ethusd" -Info info | ConvertTo-Json -Depth 4
@@ -111,7 +117,7 @@ PS C:\> Get-KETradableAssetPair -Pair "ethusd" -Info info | ConvertTo-Json -Dept
 }
 ```
 
-Function `Get-KEAssetInfo`:
+### `Get-KEAssetInfo`
 
 ```powershell
 PS C:\> Get-KEAssetInfo -Asset "eth,btc" | ConvertTo-Json
@@ -128,7 +134,9 @@ PS C:\> Get-KEAssetInfo -Asset "eth,btc" | ConvertTo-Json
 }
 ```
 
-Function `Disconnect-KExchange` to clear API data:
+### `Disconnect-KExchange`
+
+To clear API user's data environment variables:
 
 ```powershell
 Disconnect-KExchange
