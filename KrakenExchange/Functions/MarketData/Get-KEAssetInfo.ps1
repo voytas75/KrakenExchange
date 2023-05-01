@@ -30,7 +30,6 @@ function Get-KEAssetInfo {
     param (
         [Parameter(Mandatory = $false)]
         [ValidatePattern("^[A-Za-z0-9]{1,10}(\.[A-Za-z0-9]{1,10})?$")]
-        [Alias("Assets")]
         [string]$Asset
     )
     

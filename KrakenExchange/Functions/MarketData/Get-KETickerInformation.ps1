@@ -1,3 +1,4 @@
+function Get-KETickerInformation {
 <#
 .SYNOPSIS
 Retrieves ticker information for a given trading pair using the KrakenExchange API.
@@ -10,7 +11,7 @@ For more information, see the Kraken API documentation: https://docs.kraken.com/
 The trading pair to retrieve ticker information for, in the format "XBTUSD" (for Bitcoin to US dollar).
 
 .EXAMPLE
-PS C:\> Get-KETickerInformation -Pair "XBTUSD"
+PS C:> Get-KETickerInformation -Pair "XBTUSD"
 
 Returns ticker information for the XBT/USD trading pair.
 
@@ -18,9 +19,19 @@ Returns ticker information for the XBT/USD trading pair.
 The KrakenExchange PowerShell module is not affiliated with or endorsed by Kraken exchange.
 Author: chatGPT, wnapierala [@] hotmail.com
 Date: 04.2023
-#>
-function Get-KETickerInformation {
-    [CmdletBinding()]
+
+.INPUTS
+None, This function does not accept input by pipeline.
+
+.OUTPUTS
+The function returns an object that contains the ticker information for the given trading pair. The object includes information such as the last traded price, the bid and ask prices, and the volume of trades for the pair.
+
+.EXAMPLE
+PS C:> Get-KETickerInformation -Pair "XBTEUR"
+
+This example retrieves ticker information for the XBTEUR trading pair.
+
+#>[CmdletBinding()]
     param (
         [Parameter()]
         [ValidatePattern("^[A-Za-z0-9]{1,10}(\.[A-Za-z0-9]{1,10})?$")]

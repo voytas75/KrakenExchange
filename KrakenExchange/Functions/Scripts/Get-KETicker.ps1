@@ -1,22 +1,27 @@
 
 function Get-KETicker {
-    <#
-    .SYNOPSIS
-    Connects to the Kraken WebSocket API and subscribes to the ticker data for a specified trading pair.
-    .DESCRIPTION
-    This function connects to the Kraken WebSocket API and subscribes to the ticker data for a specified trading pair. 
-    The trading pair is specified as a parameter, with a default value of "BTC/USD".
-    .PARAMETER Pair
-    Trading pair.
-    .EXAMPLE
-    Get-KETicker
-    .EXAMPLE
-    Get-KETicker -Pair "ETH/USD"
-    .NOTES
-    The KrakenExchange PowerShell module is not affiliated with or endorsed by Kraken exchange.
-    Author: wnapierala [at] hotmail.com, chatGPT
-    Created: 03.2023
-    #>
+<#
+.SYNOPSIS
+Connects to the Kraken WebSocket API and subscribes to the ticker data for a specified trading pair.
+
+.DESCRIPTION
+This function connects to the Kraken WebSocket API and subscribes to the ticker data for a specified trading pair. 
+The trading pair is specified as a parameter, with a default value of "BTC/USD".
+
+.PARAMETER Pair
+Trading pair.
+
+.EXAMPLE
+Get-KETicker
+
+.EXAMPLE
+Get-KETicker -Pair "ETH/USD"
+
+.NOTES
+The KrakenExchange PowerShell module is not affiliated with or endorsed by Kraken exchange.
+Author: wnapierala [at] hotmail.com, chatGPT
+Created: 03.2023
+#>
 
     param (
         [string]$Pair = "BTC/USD"

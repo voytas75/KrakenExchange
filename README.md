@@ -20,7 +20,7 @@ The module is available on [PowerShell Gallery](https://www.powershellgallery.co
 Install-Module -Name KrakenExchange
 ```
 
-To get all commands in installed module including aliases, functions
+To get all commands in installed module including cmdlets, functions and aliases:
 
 ```powershell
 Get-Command -Module KrakenExchange
@@ -80,7 +80,7 @@ PS C:\> Get-KEAssetInfo -Asset eth | convertto-json
 
 ### `Get-KETicker`
 
-Connects to the Kraken WebSocket API and subscribes to the ticker data for a specified trading pair.
+Connects to the Kraken WebSocket API and subscribes to the ticker data for a specified trading pair with a default value of "BTC/USD".
 
 ```powershell
 PS C:\> Get-KETicker
@@ -94,8 +94,10 @@ o : {28179.00000, 28496.40000}
 
 ### `Get-KETickerInformation`
 
+Retrieves ticker information for a given trading pair using the KrakenExchange API.
+
 ```powershell
-PS C:\> Get-KETickerInformation -Pair "BTCUSD" | ConvertTo-Json -Depth 3
+PS C:\> Get-KETickerInformation -Pair "XBTUSD" | ConvertTo-Json -Depth 3
 {
   "error": [],
   "result": {
@@ -110,6 +112,8 @@ PS C:\> Get-KETickerInformation -Pair "BTCUSD" | ConvertTo-Json -Depth 3
 ```
 
 ### `Get-KETradableAssetPair`
+
+Retrieves information about a specific Kraken asset pair or all tradable asset pairs.
 
 ```powershell
 PS C:\> Get-KETradableAssetPair -Pair "ethusd" -Info info | ConvertTo-Json -Depth 4
@@ -127,8 +131,10 @@ PS C:\> Get-KETradableAssetPair -Pair "ethusd" -Info info | ConvertTo-Json -Dept
 
 ### `Get-KEAssetInfo`
 
+Retrieves information about a specific asset or all tradable assets from the Kraken API.
+
 ```powershell
-PS C:\> Get-KEAssetInfo -Asset "eth,btc" | ConvertTo-Json
+PS C:\> Get-KEAssetInfo -Asset "ETH" | ConvertTo-Json
 {
   "error": [],
   "result": {
