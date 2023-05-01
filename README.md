@@ -28,7 +28,10 @@ Function `Connect-KExchange` provide API data for private access (can be skipped
 Connect-KExchange
 ```
 
-**ApiKey and ApiSecret**
+---
+
+### ApiKey and ApiSecret
+
 To get a Kraken API Key and API Secret, you will need to follow these steps:
 
 1. Create a Kraken account if you don't already have one. You can sign up at <https://www.kraken.com/signup>.
@@ -46,6 +49,8 @@ To get a Kraken API Key and API Secret, you will need to follow these steps:
 7. After generating your key, you will see your API Key and API Secret displayed on the screen. Make sure to copy both the API Key and API Secret to a safe location, as the API Secret will only be displayed once.
 
 **Note** that it is important to keep your API Secret secure and not share it with anyone. You will need both your API Key and API Secret to access your Kraken account via API.
+
+---
 
 Function `Get-KEAssetInfo`:
 

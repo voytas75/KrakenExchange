@@ -1,6 +1,6 @@
-# Contributing to KrakenExchangeAPI-PowerShell
+# Contributing to KrakenExchange
 
-Thank you for your interest in contributing to KrakenExchangeAPI-PowerShell! This document outlines some guidelines and expectations for contributors to our repository.
+Thank you for your interest in contributing to KrakenExchange! This document outlines some guidelines and expectations for contributors to our repository.
 
 ## How to Contribute
 
@@ -27,7 +27,7 @@ In addition to these best practices, there are several tools available to help e
 
 ## Issue Reporting
 
-If you find an issue with the KrakenExchangeAPI-PowerShell codebase, please report it by opening an issue on GitHub. Please include a clear description of the issue, steps to reproduce it, and any relevant code or error messages.
+If you find an issue with the KrakenExchange codebase, please report it by opening an issue on GitHub. Please include a clear description of the issue, steps to reproduce it, and any relevant code or error messages.
 
 ## Pull Requests
 
