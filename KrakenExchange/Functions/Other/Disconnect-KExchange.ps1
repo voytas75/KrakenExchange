@@ -24,14 +24,15 @@ function Disconnect-KExchange {
         [Environment]::SetEnvironmentVariable("KE_API_SECRET", "", "User")
         [Environment]::SetEnvironmentVariable("KE_WEBSOCKET_TOKEN", "", "User")
         
-        exit 0
     }
     catch [System.Management.Automation.MethodInvocationException] {
+
         Write-Error "Failed to reset environment variables: $_"
-        exit 1
+
     }
     catch {
+
         Write-Error $_.Exception.Message
-        exit 1
+
     }    
 }
