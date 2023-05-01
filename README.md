@@ -1,6 +1,6 @@
 # KrakenExchange
 
-[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/krakenexchange?label=KrakenExchange%20)](https://www.powershellgallery.com/packages/KrakenExchange/2.0.0) &nbsp; ![PowerShell version](https://img.shields.io/badge/PowerShell-v7.0-blue)
+[![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/krakenexchange?label=KrakenExchange)](https://www.powershellgallery.com/packages/KrakenExchange/2.1.0) &nbsp; ![PowerShell version](https://img.shields.io/badge/PowerShell-v7.0-blue)
 
 **Note**: The module and scripts are not affiliated with Kraken or any other cryptocurrency exchange, and use of is at your own risk.
 
