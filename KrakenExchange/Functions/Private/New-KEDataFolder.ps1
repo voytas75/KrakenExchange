@@ -72,8 +72,6 @@ function New-KEDataFolder {
 
         return $_TEMPFolder, $_RootFolder
         
-        exit 1
-
     }
 
     try {
@@ -84,14 +82,11 @@ function New-KEDataFolder {
 
         New-KEEnvVariable -envName "KE_CRYPTOCURRENCYPRICESFOLDER" -envValue "${TargetPath}\${RootFolderName}\${CryptocurrencyPricesName}"
 
-
     }
     catch {
         Write-Error "Can't create '${CryptocurrencyPricesName}' in '${TargetPath}\${RootFolderName}'. Error message: $($PSItem.Exception.Message)"
 
         return $_TEMPFolder, $_RootFolder, $_CryptocurrencyPricesFolder
-
-        exit 1
 
     }    
     try {
@@ -109,8 +104,6 @@ function New-KEDataFolder {
 
         return $_TEMPFolder, $_RootFolder, $_CryptocurrencyPricesFolder, $_LogsFolder
 
-        exit 1
-
     }    
     try {
 
@@ -120,14 +113,11 @@ function New-KEDataFolder {
 
         New-KEEnvVariable -envName "KE_OTHERFOLDER" -envValue "${TargetPath}\${RootFolderName}\${OtherName}"
 
-
     }
     catch {
         Write-Error "Can't create '${OtherName}' in '${TargetPath}\${RootFolderName}'. Error message: $($PSItem.Exception.Message)"
  
         return $_TEMPFolder, $_RootFolder, $_CryptocurrencyPricesFolder, $_LogsFolder, $_OtherFolder
-
-        exit 1
 
     }
 
