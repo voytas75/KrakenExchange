@@ -148,6 +148,23 @@ PS C:\> Get-KEAssetInfo -Asset "ETH" | ConvertTo-Json
 }
 ```
 
+### `Get-KEOHLCData`
+
+Gets OHLC data for a given trading pair from the Kraken exchange.
+
+```powershell
+PS C:\> Get-KEOHLCData -Pair "XBTUSD" -OHLCInterval 15 -OHLCCount 1 | convertto-json
+{
+  "error": [],
+  "result": {
+    "XXBTZUSD": [
+      "1682967600 28177.8 28177.8 28050.0 28059.7 28125.2 12.84293993 311"
+    ],
+    "last": 1682966700
+  }
+}
+```
+
 ### `Disconnect-KExchange`
 
 To clear API user's data environment variables:
