@@ -28,6 +28,25 @@ Function `Connect-KExchange` provide API data for private access (can be skipped
 Connect-KExchange
 ```
 
+**ApiKey and ApiSecret**
+To get a Kraken API Key and API Secret, you will need to follow these steps:
+
+1. Create a Kraken account if you don't already have one. You can sign up at <https://www.kraken.com/signup>.
+
+2. Log in to your Kraken account and click on the "Settings" tab in the top right corner.
+
+3. Select the "API" option from the dropdown menu.
+
+4. Click the "Generate New Key" button.
+
+5. You will need to give your API key a name and select the permissions you want to grant to the key. Kraken provides a variety of permission options, such as trading, funding, and viewing account balances.
+
+6. Once you have selected your permissions, click the "Generate Key" button.
+
+7. After generating your key, you will see your API Key and API Secret displayed on the screen. Make sure to copy both the API Key and API Secret to a safe location, as the API Secret will only be displayed once.
+
+**Note** that it is important to keep your API Secret secure and not share it with anyone. You will need both your API Key and API Secret to access your Kraken account via API.
+
 Function `Get-KEAssetInfo`:
 
 ```powershell
@@ -109,26 +128,6 @@ Function `Disconnect-KExchange` to clear API data:
 ```powershell
 Disconnect-KExchange
 ```
-
-## ApiKey and ApiSecret
-
-To get a Kraken API Key and API Secret, you will need to follow these steps:
-
-1. Create a Kraken account if you don't already have one. You can sign up at <https://www.kraken.com/signup>.
-
-2. Log in to your Kraken account and click on the "Settings" tab in the top right corner.
-
-3. Select the "API" option from the dropdown menu.
-
-4. Click the "Generate New Key" button.
-
-5. You will need to give your API key a name and select the permissions you want to grant to the key. Kraken provides a variety of permission options, such as trading, funding, and viewing account balances.
-
-6. Once you have selected your permissions, click the "Generate Key" button.
-
-7. After generating your key, you will see your API Key and API Secret displayed on the screen. Make sure to copy both the API Key and API Secret to a safe location, as the API Secret will only be displayed once.
-
-**Note** that it is important to keep your API Secret secure and not share it with anyone. You will need both your API Key and API Secret to access your Kraken account via API.
 
 ## Versioning
 
