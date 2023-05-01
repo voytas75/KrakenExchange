@@ -20,11 +20,17 @@ The module is available on [PowerShell Gallery](https://www.powershellgallery.co
 Install-Module -Name KrakenExchange
 ```
 
+To get all commands in installed module including aliases, functions
+
+```powershell
+Get-Command -Module KrakenExchange
+```
+
 ## Usage
 
 ### `Connect-KExchange`
 
-Function `Connect-KExchange` provide API data for private access (can be skipped for public access):
+Connects to the Kraken cryptocurrency exchange API and returns an API object that can be used to make private API requests (can be skipped for public access).
 
 ```powershell
 Connect-KExchange
@@ -58,6 +64,8 @@ To get a Kraken API Key and API Secret, you will need to follow these steps:
 
 ### `Get-KEAssetInfo`
 
+Retrieves information about a specific asset or all tradable assets from the Kraken API.
+
 ```powershell
 PS C:\> Get-KEAssetInfo -Asset eth | convertto-json
 {
@@ -72,7 +80,7 @@ PS C:\> Get-KEAssetInfo -Asset eth | convertto-json
 
 ### `Get-KETicker`
 
-Gets ticker using Websockets API and default `-Pair` is `BTC/USD`:
+Connects to the Kraken WebSocket API and subscribes to the ticker data for a specified trading pair.
 
 ```powershell
 PS C:\> Get-KETicker

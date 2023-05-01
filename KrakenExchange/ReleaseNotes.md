@@ -1,6 +1,6 @@
 # `KrakenExchange` powershell module - release notes
 
-## 2.1.0 - 2023.04.30
+## 2.1.0 - 2023.05.01
 
 ### Added
 
