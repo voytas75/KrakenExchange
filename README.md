@@ -173,6 +173,16 @@ To clear API user's data environment variables:
 Disconnect-KExchange
 ```
 
+### All functions and aliases
+
+#### Aliases
+
+`Get-KEAsset`, `Get-KEAssetPairs`, `Get-KEAssets`, `Get-KEPairs`
+
+#### Functions
+
+`Connect-KExchange`, `Disconnect-KExchange`, `Find-KEProfit`, `Find-KEZeroProfitPrice`, `Get-KEAccountBalance`, `Get-KEAssetInfo`, `Get-KEClosedOrders`, `Get-KEOHLCData`, `Get-KEOpenOrders`, `Get-KEOpenPositions, Get-KEOrderBook`, `Get-KEOrdersInfo`, `Get-KEProfitTable`, `Get-KERecentSpreads`, `Get-KERecentTrades, Get-KEServerTime`, `Get-KESystemStatus`, `Get-KETicker`, `Get-KETickerInformation`, `Get-KETradableAssetPair, Get-KETradeBalance`, `Get-KETradesHistory`, `Get-KETradesInfo`, `Get-KETradeVolume`, `Set-KESignature`
+
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning.
