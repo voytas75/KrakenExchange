@@ -74,7 +74,13 @@ function Get-KEAccountBalance {
         "API-Sign"   = $signature; 
         "User-Agent" = $useragent
     }
-    $AccountBalanceResponse = Invoke-RestMethod -Uri $AccountBalanceUrl -Method Post -body $AccountBalanceParam -Headers $AccountBalanceHeaders
+    try {
+        $AccountBalanceResponse = Invoke-RestMethod -Uri $AccountBalanceUrl -Method Post -body $AccountBalanceParam -Headers $AccountBalanceHeaders
+    }
+    catch {
+        Write-Error "Failed to retrieve account balance from Kraken API. Error message: $($_.Exception.Message)"
+        return
+    }
     return $AccountBalanceResponse
 }    
         
