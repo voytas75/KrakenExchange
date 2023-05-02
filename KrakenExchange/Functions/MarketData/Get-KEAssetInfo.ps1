@@ -29,6 +29,7 @@ function Get-KEAssetInfo {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $false)]
+        [ValidateLength(1, 10)]
         [ValidatePattern("^[A-Za-z0-9]{1,10}(\.[A-Za-z0-9]{1,10})?$")]
         [string]$Asset
     )
@@ -39,6 +40,11 @@ function Get-KEAssetInfo {
     $AssetInfoUrl = $endpoint + $AssetInfoMethod
 
     if ($Asset) {
+        if (!($Asset -match "^[A-Z0-9]{2,6}$")) {
+            Write-Error "Invalid asset symbol specified. Asset symbols must be 2-6 uppercase alphanumeric characters."
+            return
+        }
+
         $AssetInfoParams = [ordered]@{ 
             "asset"  = $Asset
             "aclass" = "currency" 
@@ -54,7 +60,13 @@ function Get-KEAssetInfo {
         "User-Agent" = $UserAgent
     }
 
-    $AssetInfoResponse = Invoke-RestMethod -Uri $AssetInfoUrl -Method Get -Headers $AssetInfoHeaders -Body $AssetInfoParams
+    try {
+        $AssetInfoResponse = Invoke-RestMethod -Uri $AssetInfoUrl -Method Get -Headers $AssetInfoHeaders -Body $AssetInfoParams -ErrorAction Stop
+    }
+    catch {
+        Write-Error "Failed to retrieve asset info from Kraken API. Error message: $($_.Exception.Message)"
+        return
+    }
         
     return $AssetInfoResponse
 }    

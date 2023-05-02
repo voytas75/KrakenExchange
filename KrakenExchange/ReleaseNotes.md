@@ -1,5 +1,15 @@
 # `KrakenExchange` powershell module - release notes
 
+## 2.2.0 - 2023.05.02
+
+### Added
+
+- error handling and validation in `Get-KEAssetInfo`.
+
+### Changed
+
+- 
+
 ## 2.1.0 - 2023.05.01
 
 ### Added
