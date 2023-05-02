@@ -27,7 +27,7 @@ $ApiKey = Get-Secret -Name "KE_API_KEY"
 $ApiSecret = Get-Secret -Name "KE_API_SECRET"
 
 # Implement rate limiting
-$RateLimit = New-Object System.Collections.Generic.Dictionary[string,int]
+$RateLimit = New-Object 'System.Collections.Generic.Dictionary[string,int]'
 $RateLimit.Add('AccountBalance', 10)
 $LastRequestTime = $RateLimit | ForEach-Object { [datetime]::MinValue }
 
