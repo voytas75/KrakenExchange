@@ -37,7 +37,8 @@ function Get-KEAccountBalance {
     $scriptName = $MyInvocation.MyCommand.ScriptBlock.File
     $functionName = $MyInvocation.MyCommand.Name
     Write-Debug "Script name: $scriptName"
-    Write-Debug "Function name: $functionName"    Write-Debug "APIKey env.: $([Environment]::GetEnvironmentVariable('KE_API_KEY', "User"))"
+    Write-Debug "Function name: $functionName"    
+    Write-Debug "APIKey env.: $([Environment]::GetEnvironmentVariable('KE_API_KEY', "User"))"
     Write-Debug "APIKey arg.: ${ApiKey}"
     Write-Debug "APISecret env.: $([Environment]::GetEnvironmentVariable('KE_API_SECRET', "User"))"
     Write-Debug "APISecret arg.: ${ApiSecret}"
