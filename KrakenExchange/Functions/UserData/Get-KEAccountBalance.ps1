@@ -25,12 +25,12 @@ function Get-KEAccountBalance {
     [CmdletBinding()]
     param (
         [Parameter()]
+        [ValidatePattern('^[a-zA-Z0-9/+]{1,65}$')]
         [string]$ApiKey = ([Environment]::GetEnvironmentVariable('KE_API_KEY', 'user')),
-
         [Parameter()]
         [Alias("encodedAPISecret")]
+        [ValidatePattern('^[a-zA-Z0-9/+]*={0,2}$')]
         [string]$ApiSecret = ([Environment]::GetEnvironmentVariable('KE_API_SECRET', 'user'))
-
     )
     
     Write-Debug $MyInvocation.ScriptName
