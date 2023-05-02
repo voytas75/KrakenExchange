@@ -46,7 +46,7 @@ function Find-KEZeroProfitPrice {
     param(
         [Parameter(ValueFromPipeline = $true)]
         [ValidatePattern("^[A-Za-z0-9]{1,10}(\.[A-Za-z0-9]{1,10})?$")]
-        [string]$Crypto = "ETH",
+        [string]$Crypto = "XBT",
 
         [Parameter(ValueFromPipeline = $true)]
         [ValidatePattern("^[A-Za-z0-9]{1,10}(\.[A-Za-z0-9]{1,10})?$")]
