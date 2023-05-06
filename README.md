@@ -1,5 +1,7 @@
 # KrakenExchange
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/A0A6KYBUS)
+
 [![PowerShell Gallery Version](https://img.shields.io/powershellgallery/v/krakenexchange?label=KrakenExchange)](https://www.powershellgallery.com/packages/KrakenExchange/2.1.0) &nbsp; ![PowerShell version](https://img.shields.io/badge/PowerShell-v7.0-blue) &nbsp; [![Codacy Badge](https://app.codacy.com/project/badge/Grade/890e81ad199c4a4582671fd3f0a3ce28)](https://app.codacy.com/gh/voytas75/KrakenExchange/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 **Note**: The module and scripts are not affiliated with Kraken or any other cryptocurrency exchange, and use of is at your own risk.
