@@ -16,7 +16,7 @@ Set-Alias -Name Get-KEAssetPairs -Value Get-KETradableAssetPair
 
 $oldProtocol = [Net.ServicePointManager]::SecurityProtocol
 
-# We switch to using TLS 1.2 because GitHub closes the connection if it uses 1.0 or 1.1
+# We switch to using TLS 1.2 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # Get the name of the current module
