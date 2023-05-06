@@ -28,7 +28,7 @@ $ModuleVersion = [version]"2.1.0"
 $LatestModule = Find-Module -Name $ModuleName -Repository PSGallery
 
 if ($ModuleVersion -lt $LatestModule.Version) {
-    Write-Host "An update is available for $($ModuleName). Installed version: $($InstalledModule.Version). Latest version: $($LatestModule.Version)."
+    Write-Information "An update is available for $($ModuleName). Installed version: $($InstalledModule.Version). Latest version: $($LatestModule.Version)." -InformationAction Continue
 } 
 <# else {
     Write-Host "The $($ModuleName) module is up-to-date."
@@ -38,7 +38,6 @@ if ($ModuleVersion -lt $LatestModule.Version) {
 
 
 [void](New-KEDataFolder -TargetFolder "myDocuments")
-
 
 #region Best Practise
 <# 

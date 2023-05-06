@@ -1,6 +1,6 @@
-# Contributing to KrakenExchangeAPI-PowerShell
+# Contributing to KrakenExchange
 
-Thank you for your interest in contributing to KrakenExchangeAPI-PowerShell! This document outlines some guidelines and expectations for contributors to our repository.
+Thank you for your interest in contributing to KrakenExchange! This document outlines some guidelines and expectations for contributors to our repository.
 
 ## How to Contribute
 
@@ -13,7 +13,7 @@ Thank you for your interest in contributing to KrakenExchangeAPI-PowerShell! Thi
 
 We follow the PowerShell coding standard. Please ensure that your code adheres to this standard before submitting a pull request. Additionally, we expect all new code to be well-tested using Pester.
 
-### Some of the best practices for PowerShell code include:
+### Some of the best practices for PowerShell code include
 
 * Using cmdlet and parameter names that follow the verb-noun naming convention (e.g. Get-ChildItem, Set-Item)
 * Using approved verbs for cmdlet names (you can see a list of approved verbs by running the command Get-Verb)
@@ -27,7 +27,7 @@ In addition to these best practices, there are several tools available to help e
 
 ## Issue Reporting
 
-If you find an issue with the KrakenExchangeAPI-PowerShell codebase, please report it by opening an issue on GitHub. Please include a clear description of the issue, steps to reproduce it, and any relevant code or error messages.
+If you find an issue with the KrakenExchange codebase, please report it by opening an issue on GitHub. Please include a clear description of the issue, steps to reproduce it, and any relevant code or error messages.
 
 ## Pull Requests
 

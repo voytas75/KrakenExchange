@@ -1,6 +1,10 @@
 # `KrakenExchange` powershell module - release notes
 
-## 2.2.0 - 2023.05.02
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
+
+## [2.2.0] - 2023.05.02
 
 ### Added
 
@@ -10,7 +14,7 @@
 
 - default asset in `Find-KEZeroProfitPrice`
 
-## 2.1.0 - 2023.05.01
+## [2.1.0] - 2023.05.01
 
 ### Added
 
@@ -36,7 +40,7 @@
 - show all pairs by function `Get-KETradableAssetPair`,
 - `validatepattern` for asset, crypto and currency.
 
-## 2.0.0 - 2023.04.09
+## [2.0.0] - 2023.04.09
 
 ### Added
 
@@ -51,7 +55,7 @@
 - secure api key and secret,
 - minor changes.
 
-## 1.1.0 - 2023.04.06
+## [1.1.0] - 2023.04.06
 
 ### Added
 
@@ -69,7 +73,7 @@
 - refactored code for improved performance and maintainability,
 - minor changes.
 
-## 1.0.1 - 2023.04.04
+## [1.0.1] - 2023.04.04
 
 ### Added
 
@@ -80,7 +84,7 @@
 
 - minor changes.
 
-## 1.0.0 - 2023.03
+## [1.0.0] - 2023.03
 
 ### Added
 

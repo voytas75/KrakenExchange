@@ -13,7 +13,7 @@ Thank you for your interest in contributing to KrakenExchange! This document out
 
 We follow the PowerShell coding standard. Please ensure that your code adheres to this standard before submitting a pull request. Additionally, we expect all new code to be well-tested using Pester.
 
-### Some of the best practices for PowerShell code include:
+### Some of the best practices for PowerShell code include
 
 * Using cmdlet and parameter names that follow the verb-noun naming convention (e.g. Get-ChildItem, Set-Item)
 * Using approved verbs for cmdlet names (you can see a list of approved verbs by running the command Get-Verb)
